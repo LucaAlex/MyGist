@@ -3,8 +3,9 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 2px;
-  background-color: #37393a;
+  background-color: #5291aa;
   padding: 10px;
+  border-radius: 3px;
 }
 
 .Gist .item {
@@ -17,8 +18,23 @@
   border-radius: 100%;
 }
 
-.Link {
-  text-decoration: none;
-  color: black;
+span {
+  background-color: white;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 1px;
+  border-radius: 10%;
 }
+
+.links{
+  margin: 4px;
+}
+
+a:link, a:visited,a:hover,a:active {
+  text-decoration: none;
+  color: #ca10db;
+  margin-right: 10px;
+}
+
 

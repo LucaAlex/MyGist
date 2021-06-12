@@ -1,9 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
 import './GistsCard.css';
 import { Forks } from '../Forks';
-import { useHistory, Link } from 'react-router-dom';
-import { GlobalContext } from '../../../src/contexts/GlobalContext';
-import axios from 'axios';
 
 interface IGistsCardProps {
   authorName: string;
@@ -25,23 +21,6 @@ export default function GistsCard({
   files,
   avatar_url,
 }: IGistsCardProps) {
-  // const global = useContext(GlobalContext);
-  // const [files, setFiles] = useState<any>(null);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const token = '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';
-  //     axios
-  //       .get(gist, { headers: { Authorization: `Bearer ${token}` } })
-  //       .then((response) => {
-  //         setFiles(response.data.files);
-  //       })
-  //       .catch((error) => {
-  //         console.error(error);
-  //       });
-  //   };
-  //   fetchData();
-  // }, [gist]);
-
   const renderFiles = (files: any) => {
     if (files) {
       let filesInfo: any = [];
@@ -54,7 +33,7 @@ export default function GistsCard({
       });
       return filesInfo.map((element: any) => {
         return (
-          <div>
+          <div className="links">
             <a key={element.url} href={element.url}>
               {element.name}
             </a>

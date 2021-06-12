@@ -1,8 +1,7 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { GlobalContext } from '../../../contexts/GlobalContext';
 import './Header.css';
 export default function Header() {
-  //const [userName, setUserName] = useState('');
   const global = useContext(GlobalContext);
 
   return (
