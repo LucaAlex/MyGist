@@ -15,8 +15,13 @@
 .Gists .item {
   padding: 10px;
   margin: 12px;
-  background: blue;
+  background: lightcyan;
   width: auto;
+}
+
+.Gists img {
+  height: 32px;
+  width: 32px;
 }
 
 .code {
