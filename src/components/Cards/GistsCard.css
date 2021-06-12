@@ -1,0 +1,28 @@
+.Gists{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.Gists .avatar {
+  margin: 2px;
+}
+
+.Gists .item {
+  padding: 10px;
+  margin: 12px;
+  background: blue;
+  width: auto;
+}
+
+.code {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
