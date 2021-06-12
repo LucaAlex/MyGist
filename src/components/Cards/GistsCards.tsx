@@ -1,22 +1,6 @@
-import React, { useState } from 'react';
-
 import axios from 'axios';
 
 import { GistsCard } from '.';
-import Layout from '../../components/Layout';
-
-const getForks = (forksUrl: string) => {
-  const token = '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';
-  axios
-    .get(forksUrl, { headers: { Authorization: `Bearer ${token}` } })
-    .then((response) => {
-      return response.data;
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-  return [];
-};
 
 export default function GistsCards(props: any) {
   const { gists } = props;

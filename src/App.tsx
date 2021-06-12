@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { HomePage, GistsPage, FilesPage } from './pages';
+import { GistsPage } from './pages';
 import { GlobalContext, IGlobal } from './contexts/GlobalContext';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -29,9 +29,6 @@ function App() {
           <Switch>
             <Route exact path="/">
               <GistsPage />
-            </Route>
-            <Route exact path="/files">
-              <FilesPage />
             </Route>
           </Switch>
         </Router>

@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { stringify } from 'querystring';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface IForksProps {
   forksUrl: string;
@@ -11,9 +10,8 @@ export default function Forks({ forksUrl }: IForksProps) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const token = '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';
       axios
-        .get(forksUrl, { headers: { Authorization: `Bearer ${token}` } })
+        .get(forksUrl)
         .then((response) => {
           setForks(response.data);
         })
@@ -47,7 +45,7 @@ export default function Forks({ forksUrl }: IForksProps) {
 
   return (
     <div className="item">
-      <h3>Last 3 forks: </h3>
+      <h4>Last 3 forks: </h4>
       {renderForks(forks)}
     </div>
   );
