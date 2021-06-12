@@ -6,7 +6,7 @@ import { GistsCard } from '.';
 import Layout from '../../components/Layout';
 
 const getForks = (forksUrl: string) => {
-  const token = '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';
+  const token = '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';
   axios
     .get(forksUrl, { headers: { Authorization: `Bearer ${token}` } })
     .then((response) => {
@@ -31,6 +31,8 @@ export default function GistsCards(props: any) {
             description={element.description}
             forksUrl={element.forks_url}
             avatar_url={element.owner.avatar_url}
+            gist={element.url}
+            files={element.files}
           />
         );
       });
