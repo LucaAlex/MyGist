@@ -6,10 +6,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div className="Homepage">
-          <div className="columnLeftSide"></div>
-          <div className="columnRightSide"></div>
-        </div>
+        <div className="Homepage"></div>
       </Layout>
     </>
   );

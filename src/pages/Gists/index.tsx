@@ -15,7 +15,7 @@ export default function Gists() {
   const global = useContext(GlobalContext);
   useEffect(() => {
     const fetchData = async () => {
-      const token = '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';
+      const token = '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';
       axios
         .get(`https://api.github.com/users/${global.userName}/gists`, {
           headers: { Authorization: `Bearer ${token}` },
@@ -34,7 +34,10 @@ export default function Gists() {
     <>
       <Layout>
         <div className="Gists">
-          <GistsCards gists={gists} />
+          <div className="columns">
+            {' '}
+            <GistsCards gists={gists} />
+          </div>
         </div>
       </Layout>
     </>

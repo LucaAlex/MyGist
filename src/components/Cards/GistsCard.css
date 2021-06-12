@@ -1,33 +1,24 @@
-.Gists{
+.Gist{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 80%;
-  text-align: center;
-  padding-top: 10px;
-  cursor: pointer;
-}
-
-.Gists .avatar {
-  margin: 2px;
-}
-
-.Gists .item {
+  margin-bottom: 2px;
+  background-color: #37393a;
   padding: 10px;
-  margin: 12px;
-  background: lightcyan;
-  width: auto;
 }
 
-.Gists img {
+.Gist .item {
+  text-align: center;
+}
+
+.Gist img {
   height: 32px;
   width: 32px;
+  border-radius: 100%;
 }
 
-.code {
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: lightblue;
-  margin-top: 20px;
+.Link {
+  text-decoration: none;
+  color: black;
 }
+

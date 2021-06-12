@@ -1,7 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { GlobalContext } from '../../../contexts/GlobalContext';
 import './Header.css';
-
 export default function Header() {
   //const [userName, setUserName] = useState('');
   const global = useContext(GlobalContext);
@@ -17,13 +16,6 @@ export default function Header() {
             global.setUserName(event.target.value);
           }}
         ></input>
-        <button
-          onClick={() => {
-            console.log(global.userName);
-          }}
-        >
-          Search
-        </button>
       </div>
     </div>
   );
